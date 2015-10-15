@@ -1,0 +1,80 @@
+/*
+JavaScript Bowling Score Calculator (JS-BSC)
+Copyright (c) 2006 Richard Tong. All Rights Reserved.
+
+Licensed under the terms of the GNU General Public License.
+See http://opensource.org/licenses/gpl-license.php
+
+File name: js-bsc.css
+	This is the main style sheet for JS-BSC.
+*/
+
+body {
+		font-family: Arial, Helvetica, Geneva, sans-serif;
+		font-size: small;
+		background: #333;
+		color: white;
+}
+
+table {
+		background: #666;
+		color: white;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+}
+
+input
+		{
+			text-align: center;
+			font-weight: bold;
+		}
+
+a
+		{
+			color: #666;
+			text-decoration: none;
+		}
+
+a:visited 
+		{
+			color: white;
+			text-decoration: none;
+		}
+
+a:hover 
+		{
+			color: #666;
+			border-style: none;
+		}
+
+img
+		{
+			border-style: none;
+			text-decoration: none;
+		}
+
+#toppage
+		{
+			width: 90%;
+			height: 100%;
+			background: #333;
+			margin-left: 15px;
+		}
+		
+#frame	{
+			border-width: 2px; 
+			border-color: #333; 
+			border-style: solid;
+			font-size: medium;
+			font-weight: bold;
+		}
+		
+#tip	{
+			font-size: smaller;
+		}
+		
+#collapse
+		{
+			display: block;
+		}

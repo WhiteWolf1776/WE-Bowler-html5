@@ -1,0 +1,71 @@
+<!--
+JavaScript Bowling Score Calculator (JS-BSC)
+Copyright (c) 2006 Richard Tong. All Rights Reserved.
+
+Licensed under the terms of the GNU General Public License.
+See http://opensource.org/licenses/gpl-license.php
+
+File name: more.html
+	This is the "help" page of the application.
+-->
+
+<html>
+<head>
+<title>Bowling Score Calculator Help Text</title>
+<link href="js-bsc.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+<div id="toppage">
+<h1>How to Use the Bowling Score Calculator</h1>
+<p>Enter each player's name(s) or the game number in the Player field.<br />
+Then enter your scores in each frame.</p>
+
+<p>You can collapse or expand the introductory text by clicking anywhere on the title text
+(the "JavaScript Bowling Score Calculator (JS-BSC)" text). When collapsed, this provides more
+room to display the player tables.</p>
+
+<p>The ball entry fields only allow the numbers 0-9. First ball fields also allow an X,
+and second ball fields also allow a /.<br />
+Entry errors are simply removed, and you need to enter a valid value.</p>
+
+<p>Click on the pin diagram for each frame to toggle the 
+pins from "knocked down", to "left standing", to "missed on spare ball"
+(by default, all pins are down, so if you get a strike, you don't need to toggle any pins).</p>
+
+<div style="padding-left: 12px; background: #999; border-style: solid; border-width: 2px; border-color: black;">
+<p><img src="hit.gif" /> Pin was knocked down</p>
+<p><img src="left.gif" /> Pin was not knocked down on first ball</p>
+<p><img src="miss.gif" /> Pin was not knocked down (missed) on second ball</p>
+</div>
+
+<p>The Clear Values button will clear all fields, including Player Name and pin diagrams.</p>
+
+<p>It is expected that you enter data sequentially,
+from frame 1 to frame 10. However the program doesn't verify that you do so, which will cause
+an incorrect score calculation. This is corrected by filling in the rest of the frames (in any order,
+as long as they are all correctly filled). This is by design, so you have maximum flexibility to
+edit/fix scores, and also to score "what-if" games.</p>
+
+<p>Max Score is calculated based on the 
+POSTED score, not on actual rolls. So if you have a score of 105 on frame 5, 
+but then you get a spare on frame 6, we are still waiting on the results of your
+next roll, so the Max Score is calculated based on your score of 105, and doesn't
+count the spare you just rolled. You could argue either way, but I've chosen to
+calculate based on the actual POSTED score, as your new score is technically still PENDING.</p>
+
+<p>Because BSC is written in javascript, you cannot save what you have inputted,
+but you can use your browser's Print function to print a nice chart for your records. If a printer isn't
+handy, take a printscreen of the browser (Alt-PrtScr) and save it to your laptop for later printing.</p>
+
+<p>JS-BSC is tested on Firefox and Internet Explorer on Windows, Firefox on Linux, and Safari on Mac OS X.
+It should work on other modern graphical browsers as well, but if you have problems, please submit bugs 
+(and feature requests) at <a href="http://sourceforge.net/projects/js-bsc">http://sourceforge.net/projects/js-bsc</a></p>
+
+<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=183020&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
+Hosted by sourceforge.net
+
+</div>
+</body>
+</html>

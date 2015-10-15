@@ -1,0 +1,57 @@
+<!--
+JavaScript Bowling Score Calculator (JS-BSC)
+Copyright (c) 2006 Richard Tong. All Rights Reserved.
+
+Licensed under the terms of the GNU General Public License.
+See http://opensource.org/licenses/gpl-license.php
+
+JS-BSC is a javascript program that calculates a game of bowling for
+3 players, or a 3-game series for one player.  It is easily modified
+to display and track any number of games.
+
+Features:
+-- Shows the player the maximum score that can be achieved if the player 
+   were to finish the game with perfect rolls.
+
+-- An interactive pin diagram for each frame shows the pins the player knocked 
+   down and left standing after the first ball, and the pins missed on the second ball.
+
+File name: js-bsc.html
+	This is the main page of the application.
+	Open this file in any modern web browser.
+-->
+
+<html>
+<head>
+<title>JavaScript Bowling Score Calculator (JS-BSC)</title>
+<script language="JavaScript" src="js-bsc.js"></script>
+<LINK href="js-bsc.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div id="toppage">
+<h2 onClick="collapse('collapse')">JavaScript Bowling Score Calculator (JS-BSC)</h2>
+<span id="collapse">
+<p style="font-size: smaller;">Copyright (c) 2006 Richard Tong. All Rights Reserved.</p>
+<p>This JavaScript bowling calculator can be used to
+track scores for 3 players, or a 3-game series for one player.<br .>
+You can also keep track of what pins you knocked down, left, or missed.
+<a href="more.html" target="_blank">[ more description... ]</a></p>
+</span>
+<!--
+Add or remove displayTable lines here to accomodate whatever number
+of players or games that you want. Just ensure you pass a unique parameter.
+-->
+<script language="JavaScript">
+<!--
+displayTable("player1");
+displayTable("player2");
+displayTable("player3");
+-->
+</script>
+
+<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=183020&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
+Hosted by sourceforge.net
+</div>
+</body>
+</html>
