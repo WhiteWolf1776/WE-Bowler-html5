@@ -88,7 +88,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#frameScoreCell {
 
+}
+
+input[type= "text"] {
+  text-align: center;
+}
 
 
 

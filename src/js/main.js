@@ -13,7 +13,7 @@ function addGame() {
     document.write("</tr><tr>");
     for (var i = 0; i <= 20; i++)  // Display input fields
     {
-        document.write("<td><input type='text' name='ball' size='1' maxLength='1' onChange='calculate("+gameName+")' /></td>");
+        document.write("<td id= 'frameScoreCell'><input type='text' name='ball' size='1' maxLength='1' onChange='calculate("+gameName+")' /></td>");
     }
     document.write("<td>&nbsp;</td><td>Max Score</td></tr><tr>");  // Display the Max Score heading
 
